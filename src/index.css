@@ -191,7 +191,7 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 
 
-.location_card>img{width: 100%; height: fit-content; object-fit: contain;}
+.location_card>img{width: 100%; height: auto; object-fit: contain;}
 .loc{position: relative;position: relative;left: 36%; bottom:25%; display: flex;align-items: center;justify-content: center;width: fit-content;height: fit-content;}
 .loc2{left: 35%; bottom:10%;}
 .loc3{left: 45%; bottom:19%;}
