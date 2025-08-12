@@ -21,6 +21,8 @@ import uk_icon from "../assets/uk.svg"
 import { BiCheckCircle, BiChevronDown } from "react-icons/bi"
 import { BsCopy } from "react-icons/bs";
 import { useEffect } from "react"
+
+import { AiOutlineMenu } from "react-icons/ai";
 const Home = ()=>{
 
 
@@ -141,9 +143,11 @@ useEffect(()=>{
 },[scrollY])
   return <section className="body_container">
     <div className={headerShow?"header_cont show_header":"header_cont"}>
-    <header className={"header"}>
+    <header className="header">
       <img src={logo} alt={""}/>
 
+
+<AiOutlineMenu className="header_menu"/>
       <ul className="header_list">
 {Menu.map((item,index)=>(
   <li><Link href={item.link}>{item.title}</Link></li>

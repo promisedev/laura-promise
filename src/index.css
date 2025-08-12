@@ -39,8 +39,17 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .header{width: 85%; height: 100px; display: flex; align-items: center;justify-content: space-between;}
 .header>img{width: 150px;object-fit: contain;}
+@media screen and (max-width:720px) {
+.header>img{width: 100px;object-fit: contain;}  
+}
 
+.header_menu{color:white; font-size: 35px;}
 .header_list{display: flex; gap:20px; align-items: center;margin:0px; padding:0px;color:white; list-style-type: none;}
+@media screen and (max-width:720px) {
+  .header_list{display: none;}
+}
+
+
 .header_list>li{cursor: pointer;}
 .header_list>li>a{color:white;text-decoration: none;}
 
@@ -49,10 +58,27 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .hero_overlay>h2{width: 400px;color:white;text-align: center;margin: 0;}
 .hero_overlay>h1{width: 600px;color:white;text-align: center;margin: 0;}
+@media screen and (max-width:720px) {
+.hero_overlay>h1{width: fit-content;color:white;text-align: center;margin: 0;font-size: 40px;}  
+}
+
+
+
 .ho_date{width: 400px;color:white; display: flex; border:2px solid white;align-items: center; justify-content: center;padding: 20px 0px;gap: 10px;}
+@media screen  and (max-width:720px){
+.ho_date{width: 80%;padding: 10px;  }
+}
+
+
 .ho_date>p{display: flex; align-items: center; gap: 10px;;}
 
 .hero_overlay>p{width: 400px;color:white;text-align: center;}
+@media screen and (max-width:720px) {
+.hero_overlay>p{width: 80%; font-size: 18px; }
+}
+
+
+
 .hero_overlay_btn{width:fit-content;color:white; border-radius: 20px; padding: 20px 20px;background: none;display: flex; align-items: center;gap: 20px;background:white;color: black; font-size: 17px;cursor: pointer;border: none;font-weight: 500;}
 .hero_overlay_btn:hover{background:#C5A880;;color: black;}
 
@@ -67,14 +93,33 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .date_hero{width: 100%; height: 90vh;}
 .date_hero_overlay{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;background: rgb(255, 255, 255,0.8);}
+
 .dho_cont{width: 85%; height: fit-content; display: flex; gap: 50px;;}
+@media screen and (max-width:720px) {
+  .dho_cont{flex-direction: column;}
+}
+
 .wedding_date{flex:1; display: flex; flex-direction: column;gap: 20px;align-items: center;}
 .wedding_date>h2{font-size: 35px; color:white;color:#947141;}
 .wd_desc{width: 100%; display: flex; justify-content: space-between;gap: 40px;}
+@media screen and (max-width:720px) {
+ .wd_desc{width: 100%; display: flex; justify-content: space-between;gap: 0px;flex-direction: column;} 
+}
+
+
+
 
 .wd_frag1{display: flex; gap: 10px; align-items: center;flex: 1; border-right: 1px solid #C5A880;}
+@media screen and (max-width:720px) {
+ .wd_frag1{display: flex; gap: 10px; align-items: center;flex: 1; border-right: none} 
+}
+
+
 .wd_frag1>p{color:rgb(0, 0, 0); font-size: 20px;width: 80%;}
 .wd_icon{font-size: 50px;color:#947141;}
+@media screen and (max-width:720px) {
+ .wd_icon{font-size: 20px;color:#947141;} 
+}
 .wd_frag2{display: flex; flex-direction: column; align-items: left;flex: 1;}
 .wd_frag2>p{display: flex; align-items: center;gap:10px;color: rgb(0, 0, 0);font-size: 19px;}
 .wd_frag2>h4{display: flex; align-items: center;gap:10px;color: rgb(0, 0, 0);font-size: 22px;margin-top: 0;}
@@ -111,9 +156,20 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .sponsor>h3{font-size: 26px;color: white;}
 
-.location{width: 100%; height: 700px;background: white;display: flex; align-items: center; justify-content: center;}
-.location_card{width: 50vw; height: 70%;position: relative ;}
-.location_card>img{width: 100%; height: 100%; object-fit: contain;}
+.location{width: 100%; height: 700px;background: white;display: flex; align-items: center; justify-content: center;padding: 40px 0px 40px 0px;}
+@media screen and (max-width:720px) {
+ .location{width: 100%; height: 400px; }
+}
+
+
+.location_card{width: 50vw; height: 100%;position: relative ;}
+@media screen and (max-width:720px) {
+ .location_card{width: 70vw; height: 80%;position: relative ;} 
+}
+
+
+
+.location_card>img{width: 100%; height: fit-content; object-fit: contain;}
 .loc{position: relative;position: relative;left: 36%; bottom:25%; display: flex;align-items: center;justify-content: center;width: fit-content;height: fit-content;}
 .loc2{left: 35%; bottom:10%;}
 .loc3{left: 45%; bottom:19%;}
@@ -130,11 +186,25 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .loc_info{position: absolute; width: max-content; padding: 10px 25px;background: white; ;left: 18px;bottom: 10px;border: 1px solid rgb(181, 181, 248);}
 .loc_info>p{margin: 0px;; padding:0px;}
+@media screen and (max-width:720px) {
+.loc_info>p{font-size: 10px;}  
+}
+
+
+
+
 .loc_info::before{ content: " "; width: 16px ; height: 16px; background: rgb(255, 255, 255);left: -9px;position: absolute;transform: rotate(38deg);border: 1px solid rgb(181, 181, 248);border-right: 0px;border-top: 0px;}
 .loc1_info{left: -180px}
+@media screen and (max-width:720px) {
+ .loc1_info{left: -140px} 
+}
+
 .loc1_info::before{left: 95%;transform: rotate(220deg);}
 
 .loc2_info{left: -150px}
+@media screen and (max-width:720px) {
+ .loc2_info{left: -120px} 
+}
 .loc2_info::before{left: 93%;transform: rotate(220deg);}
 
 .payment_modal{width: 100%; height: 100%; position: fixed;background: rgb(250, 243, 243);display: flex; align-items: center;flex-direction:column; align-items: center;justify-content:center;z-index: 900; gap: 30px;}
