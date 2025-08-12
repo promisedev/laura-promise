@@ -43,7 +43,11 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 .header>img{width: 100px;object-fit: contain;}  
 }
 
-.header_menu{color:white; font-size: 35px;}
+.header_menu{color:white; font-size: 35px;display:none}
+@media screen and (max-width:720px) {
+  .header_menu{display: flex;}
+}
+
 .header_list{display: flex; gap:20px; align-items: center;margin:0px; padding:0px;color:white; list-style-type: none;}
 @media screen and (max-width:720px) {
   .header_list{display: none;}
@@ -54,7 +58,12 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 .header_list>li>a{color:white;text-decoration: none;}
 
 
-.menu_nav{width: 80%; height: 0px; overflow: hidden;}
+.menu_nav{width: 80%; height: 0px; overflow: hidden;display: none;}
+@media screen and (max-width:720px) {
+  .menu_nav{display: flex;}
+}
+
+
 
 
 .show_menu_nav{padding: 20px 0px;height: fit-content;}
@@ -137,7 +146,7 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 }
 
 
-.wd_frag1>p{color:rgb(0, 0, 0); font-size: 20px;width: 80%;}
+.wd_frag1>p>a{color:rgb(0, 0, 0); font-size: 20px;width: 80%;text-decoration: none;}
 .wd_icon{font-size: 50px;color:#947141;}
 @media screen and (max-width:720px) {
  .wd_icon{font-size: 20px;color:#947141;} 
@@ -193,6 +202,8 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .location_card>img{width: 100%; height: auto; object-fit: contain;}
 .loc{position: relative;position: relative;left: 36%; bottom:25%; display: flex;align-items: center;justify-content: center;width: fit-content;height: fit-content;}
+.loc>a{text-decoration: none; color:black;}
+
 .loc2{left: 35%; bottom:10%;}
 .loc3{left: 45%; bottom:19%;}
 
@@ -235,6 +246,11 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 
 .modal_card{width: 500px; height: 70%; background: white; border-radius: 10px;display: flex; flex-direction: column; gap: 25px;align-items: center; ;position: relative;overflow: hidden;}
+
+@media screen and (max-width:720px) {
+  .modal_card{width: 80%;}
+}
+
 
 .active_account{width: fit-content; height: 40px; border: 20pc; padding: 5px 5px; background:rgb(250, 243, 243) ;display: flex; gap: 10px; display: flex; align-items: center; justify-content: center; border-radius: 20px;margin-top: 10px;cursor: pointer;}
 .active_account>img{width: 35px; height: 35px; border-radius: 50%; object-fit: cover;}

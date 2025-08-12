@@ -23,6 +23,8 @@ import { BsCopy } from "react-icons/bs";
 import { useEffect } from "react"
 
 import { AiOutlineMenu } from "react-icons/ai";
+import { SEO } from "../assets/component/seo"
+
 const Home = ()=>{
 
 
@@ -149,13 +151,22 @@ useEffect(()=>{
 const toggleMenu = ()=>{
 setMenuShow(true)
 }
+
+const closeMenu = ()=>{
+setMenuShow(false)
+}
+
+
+
   return <section className="body_container">
     <div className={headerShow||menuShow?"header_cont show_header":"header_cont"}>
     <header className="header">
       <img src={logo} alt={""}/>
 
 
-<AiOutlineMenu className="header_menu" onClick={toggleMenu}/>
+{menuShow?<GrClose className="header_menu" onClick={closeMenu}/>:<AiOutlineMenu className="header_menu" onClick={toggleMenu}/>}
+
+
       <ul className="header_list">
 {Menu.map((item,index)=>(
   <li><Link href={item.link}>{item.title}</Link></li>
@@ -195,7 +206,7 @@ setMenuShow(true)
 <div className="wd_desc">
 <div className="wd_frag1">
 <CiLocationOn className="wd_icon"/>
-<p>45 Redeption Road, Pipeline 1 Rumukwurushi, Port Harcourt, Rivers State.</p>
+<p><Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A">45 Redeption Road, Pipeline 1 Rumukwurushi, Port Harcourt, Rivers State.</Link></p>
 </div>
 {/* ------------- */}
 <div className="wd_frag2">
@@ -211,7 +222,7 @@ setMenuShow(true)
 <div className="wd_desc">
 <div className="wd_frag1">
 <CiLocationOn className="wd_icon"/>
-<p>Deeper Christian Life Ministry, Rumudara, Port Harcourt, Rivers State.</p>
+<p><Link href="https://maps.app.goo.gl/eAgxJDw2DLHZtxn78">Deeper Christian Life Ministry, Rumudara, Port Harcourt, Rivers State.</Link></p>
 </div>
 {/* ------------- */}
 <div className="wd_frag2">
@@ -259,19 +270,19 @@ setMenuShow(true)
 <div className="loc">
  <span className="loc_nav"></span> 
 <GrLocationPin className="loc_icon"/>
-<div className="loc_info loc1_info"><p>White Wedding</p></div>
+<Link href="https://maps.app.goo.gl/eAgxJDw2DLHZtxn78" className="loc_info loc1_info"><p>White Wedding</p></Link>
 </div>
 {/* ----- */}
 <div className="loc loc2">
  <span className="loc_nav"></span> 
 <GrLocationPin className="loc_icon"/>
-<div className="loc_info loc2_info"><p>Reception</p></div>
+<Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A" className="loc_info loc2_info"><p>Reception</p></Link>
 </div>
 {/* ----- */}
 <div className="loc loc3">
  <span className="loc_nav"></span> 
 <GrLocationPin className="loc_icon"/>
-<div className="loc_info"><p>Traditional Marriage</p></div>
+<Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A" className="loc_info"><p>Traditional Marriage</p></Link>
 </div>
 {/* ----- */}
 
@@ -355,3 +366,25 @@ setMenuShow(true)
 
 
 export default Home
+
+
+
+export const Head=()=>{
+  //console.log(props,data)
+  const keywords =["wedding"]
+  const pathname = ""
+  const excerpt = "With great joy and excitement, we invite you to celebrate our love as we begin a new chapter together."
+  return (
+    <SEO
+      title={`Laura & Promise 2025`}
+      description={excerpt}
+      pathname={`/${pathname}`}
+      twitterUsername={"@"}
+      url={"www.laura-promise.site"}
+      image={
+        "https://firebasestorage.googleapis.com/v0/b/oceandyn-bd23b.appspot.com/o/hero.jpg?alt=media&token=c6cc1bc6-f07b-46c2-b6bb-ac861246c4c5"
+      }
+      keywords={keywords}
+    />
+  );
+} 
