@@ -162,6 +162,14 @@ setMenuShow(true)
 ))}
       </ul>
     </header>
+<nav className={menuShow?"menu_nav show_menu_nav":"menu_nav"} >
+  <ul className="menu_nav_list">
+{Menu.map((item,index)=>(
+  <li><Link href={item.link}><span>{item.title}</span><GoArrowRight className="r_icon"/></Link></li>
+))}
+      </ul>
+</nav>
+
 </div>
 {/* ------------------------------------- */}
 <div className="hero" style={{backgroundImage:`url(${hero})`, backgroundRepeat:'no-repeat', backgroundSize:'cover', backfaceVisibility:"80%"}}>
