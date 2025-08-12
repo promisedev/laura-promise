@@ -118,6 +118,7 @@ const scrollRef = useRef(null);
   }
   // ---------------------
   const [headerShow,setHeaderShow]= useState(false)
+   const [menuShow,setMenuShow]= useState(false)
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -141,13 +142,19 @@ useEffect(()=>{
     setHeaderShow(false)
   }
 },[scrollY])
+
+// ------------------------------
+
+const toggleMenu = ()=>{
+setMenuShow(true)
+}
   return <section className="body_container">
-    <div className={headerShow?"header_cont show_header":"header_cont"}>
+    <div className={headerShow||menuShow?"header_cont show_header":"header_cont"}>
     <header className="header">
       <img src={logo} alt={""}/>
 
 
-<AiOutlineMenu className="header_menu"/>
+<AiOutlineMenu className="header_menu" onClick={toggleMenu}/>
       <ul className="header_list">
 {Menu.map((item,index)=>(
   <li><Link href={item.link}>{item.title}</Link></li>
