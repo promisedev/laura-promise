@@ -123,6 +123,7 @@ const scrollRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      setMenuShow(false)
       setScrollY(window.scrollY); // or use window.pageYOffset
     };
 
