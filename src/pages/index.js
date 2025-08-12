@@ -253,29 +253,7 @@ setMenuShow(true)
 {/* -------------location--------------------- */}
 <div className="location"  id="direction">
 
-<div className="location_card">
-<img src={location} alt="wedding location"/>
-{/* ---------------------------- */}
-<div className="loc">
- <span className="loc_nav"></span> 
-<GrLocationPin className="loc_icon"/>
-<div className="loc_info loc1_info"><p>White Wedding</p></div>
-</div>
-{/* ----- */}
-<div className="loc loc2">
- <span className="loc_nav"></span> 
-<GrLocationPin className="loc_icon"/>
-<div className="loc_info loc2_info"><p>Reception</p></div>
-</div>
-{/* ----- */}
-<div className="loc loc3">
- <span className="loc_nav"></span> 
-<GrLocationPin className="loc_icon"/>
-<div className="loc_info"><p>Traditional Marriage</p></div>
-</div>
-{/* ----- */}
 
-</div>
 
 
 </div>
