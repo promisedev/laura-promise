@@ -156,8 +156,8 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
  .wd_frag1{display: flex; gap: 10px; align-items: center;flex: 1; border-right: none} 
 }
 
-
-.wd_frag1>p>a{color:rgb(0, 0, 0); font-size: 20px;width: 80%;text-decoration: none;}
+.wd_frag1>p{width: 80%;}
+.wd_frag1>p>a{color:rgb(0, 0, 0); font-size: 20px;text-decoration: none;}
 .wd_icon{font-size: 50px;color:#947141;}
 @media screen and (max-width:720px) {
  .wd_icon{font-size: 20px;color:#947141;} 
