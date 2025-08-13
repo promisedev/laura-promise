@@ -68,18 +68,18 @@ const Reminder = (e)=>{
   e.preventDefault()
 const traditionalWedding = {
   title: "Traditional Wedding",
-  startDate: "20250815",
-  endDate: "20250815",
+  startDate: "20251010",
+  endDate: "20251010",
   details: "Join us for the Traditional Wedding Ceremony!",
-  location: "Location of Traditional Wedding"
+  location: "45 Redeption Road, Pipeline Rumukwukwurushi, Port Harcourt"
 };
 
 const whiteWedding = {
   title: "White Wedding",
-  startDate: "20250816",
-  endDate: "20250816",
+  startDate: "20251011",
+  endDate: "20251011",
   details: "Celebrate the White Wedding with us!",
-  location: "Location of White Wedding"
+  location: "Deeper Christian Life Ministry, Rumudara, Port Harcourt, Rivers State."
 };
 
 const createGoogleCalendarUrl = (event) => {
@@ -93,6 +93,24 @@ window.open(traditionalUrl, '_blank');
 window.open(whiteUrl, '_blank');
 }
 
+const Reminder2 = (e)=>{
+  e.preventDefault()
+
+const whiteWedding = {
+  title: "White Wedding",
+  startDate: "20251011",
+  endDate: "20251011",
+  details: "Celebrate the White Wedding with us!",
+  location: "Deeper Christian Life Ministry, Rumudara, Port Harcourt, Rivers State."
+};
+
+const createGoogleCalendarUrl = (event) => {
+  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.startDate}/${event.endDate}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}&sf=true&output=xml`;
+};
+
+const whiteUrl = createGoogleCalendarUrl(whiteWedding);
+window.open(whiteUrl, '_blank');
+}
 // ---------------------------------------------
 const scrollRef = useRef(null);
 
@@ -214,6 +232,7 @@ setMenuShow(false)
 <h4><IoCalendarClearOutline className="wdf_i2"/> <span>October 10th, 2025</span></h4>
 </div>
 </div>
+<button onClick={Reminder} className="hero_overlay_btn"><span>Create Reminder</span> <GoArrowRight className="r_icon"/></button>
 </div>
 
 {/* -----white------------- */}
@@ -230,6 +249,7 @@ setMenuShow(false)
 <h4><IoCalendarClearOutline className="wdf_i2"/> <span>October 11th, 2025</span></h4>
 </div>
 </div>
+<button onClick={Reminder2} className="hero_overlay_btn"><span>Create Reminder</span> <GoArrowRight className="r_icon"/></button>
 </div>
 </div>
 

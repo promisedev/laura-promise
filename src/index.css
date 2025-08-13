@@ -123,7 +123,12 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 
 .date_hero{width: 100%; height: 90vh;}
-.date_hero_overlay{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;background: rgb(255, 255, 255,0.8);}
+
+@media screen and (max-width:720px) {
+.date_hero{width: 100%; height: fit-content;}   
+}
+
+.date_hero_overlay{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;background: rgb(255, 255, 255,0.8);padding: 30px 0px;}
 
 .dho_cont{width: 85%; height: fit-content; display: flex; gap: 50px;;}
 @media screen and (max-width:720px) {
@@ -132,6 +137,12 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 
 .wedding_date{flex:1; display: flex; flex-direction: column;gap: 20px;align-items: center;}
 .wedding_date>h2{font-size: 35px; color:white;color:#947141;}
+
+@media screen and (max-width:720px) {
+  .wedding_date>h2{font-size: 30px; color:white;color:#947141;margin: 5px 0px;}
+}
+
+
 .wd_desc{width: 100%; display: flex; justify-content: space-between;gap: 40px;}
 @media screen and (max-width:720px) {
  .wd_desc{width: 100%; display: flex; justify-content: space-between;gap: 0px;flex-direction: column;} 
