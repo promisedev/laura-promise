@@ -71,7 +71,7 @@ const traditionalWedding = {
   startDate: "20251010",
   endDate: "20251010",
   details: "Join us for the Traditional Wedding Ceremony!",
-  location: "45 Redeption Road, Pipeline Rumukwukwurushi, Port Harcourt"
+  location: "45 Redemption Road, Pipeline Rumukwurushi, Port Harcourt"
 };
 
 const whiteWedding = {
@@ -224,7 +224,7 @@ setMenuShow(false)
 <div className="wd_desc">
 <div className="wd_frag1">
 <CiLocationOn className="wd_icon"/>
-<p><Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A">45 Redeption Road, Pipeline 1 Rumukwurushi, Port Harcourt, Rivers State.</Link></p>
+<p><Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A">45 Redemption Road, Pipeline 1 Rumukwurushi, Port Harcourt, Rivers State.</Link></p>
 </div>
 {/* ------------- */}
 <div className="wd_frag2">
