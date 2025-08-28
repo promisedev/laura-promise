@@ -128,11 +128,11 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 .date_hero{width: 100%; height: fit-content;}   
 }
 
-.date_hero_overlay{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;background: rgb(255, 255, 255,0.8);padding: 30px 0px;}
+.date_hero_overlay{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;background: rgb(255, 255, 255,0.8);}
 
 .dho_cont{width: 85%; height: fit-content; display: flex; gap: 50px;;}
 @media screen and (max-width:720px) {
-  .dho_cont{flex-direction: column;}
+  .dho_cont{flex-direction: column;padding: 40px 0px;}
 }
 
 .wedding_date{flex:1; display: flex; flex-direction: column;gap: 20px;align-items: center;}
@@ -215,7 +215,8 @@ h4,li,a,p,button{font-family: "Roboto", sans-serif;
 .loc{position: relative;position: relative;left: 36%; bottom:25%; display: flex;align-items: center;justify-content: center;width: fit-content;height: fit-content;}
 .loc>a{text-decoration: none; color:black;}
 
-.loc2{left: 35%; bottom:10%;}
+.loc2{left: 40%; bottom:35%;}
+
 .loc3{left: 45%; bottom:19%;}
 
 

@@ -296,7 +296,7 @@ setMenuShow(false)
 <div className="loc loc2">
  <span className="loc_nav"></span> 
 <GrLocationPin className="loc_icon"/>
-<Link href="https://maps.app.goo.gl/MLAGs7N2a7cAiCL4A" className="loc_info loc2_info"><p>Reception</p></Link>
+<Link href="https://maps.app.goo.gl/zDTqCK3WtG1eero68" className="loc_info loc2_info"><p>Reception</p></Link>
 </div>
 {/* ----- */}
 <div className="loc loc3">
