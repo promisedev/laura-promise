@@ -262,6 +262,7 @@ setMenuShow(false)
 {/* ------------------------ */}
 
 <div className="ps_wrapper" id="photo">
+  <h2>Photo Speaks</h2>
 <div className="ps_ctr">
 <button><GoArrowLeft className="ps_icon" onClick={()=>scrollByAmount(-400)}/></button>
 <button><GoArrowRight className="ps_icon" onClick={()=>scrollByAmount(400)}/></button>
@@ -283,7 +284,7 @@ setMenuShow(false)
 </div>
 {/* -------------location--------------------- */}
 <div className="location"  id="direction">
-
+  <h2>Direction Guide</h2>
 <div className="location_card">
 <img src={location} alt="wedding location"/>
 {/* ---------------------------- */}
